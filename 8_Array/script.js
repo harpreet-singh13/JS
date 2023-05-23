@@ -4,7 +4,7 @@
 //     console.log(months[i]);
 // }
 
-const names = ['Jon', 'Bob', 'David', 'Mark'];
+// const names = ['Jon', 'Bob', 'David', 'Mark'];
 
 // Array Push --> insert element at the end
 // return value of push --> new array length
@@ -119,20 +119,20 @@ const names2 = ['Jon', 'Jenny', 'Johnny'];
 // const numbers = [-10, 0, -2, 15, -36, 25];
 
 // const positiveNumbers = numbers.filter((number) => {
-//     return number >= 0;
-// });
+//         return number >= 0;
+//     });
 
-// console.log(positiveNumbers);
+//     console.log(positiveNumbers);
 
 
-// A start up wants to reward the employees 
+// A start up wants to reward the employees
 // with 7 or more hours of overtime
 
-const employeesData = [
-    { name: 'Sebastian', overtime: 5 },
-    { name: 'Cardi Vee', overtime: 7 },
-    { name: 'George Lopez', overtime: 12 }
-];
+//     const employeesData = [
+//         { name: 'Sebastian', overtime: 5 },
+//     { name: 'Cardi Vee', overtime: 7 },
+//     { name: 'George Lopez', overtime: 12 }
+// ];
 
 // const employeesToReward = employeesData.filter((employees) => {
 //     return employees.overtime >= 7;
@@ -140,10 +140,84 @@ const employeesData = [
 
 // console.log(employeesToReward);
 
-const employeesToReward = employeesData.filter((employeesData) => employeesData.overtime >= 7);
-const employeesName = employeesToReward.map((emp) => emp.name);
+// const employeesToReward = employeesData.filter((employeesData) => employeesData.overtime >= 7);
+// const employeesName = employeesToReward.map((emp) => emp.name);
 
 // console.log(employeesName);
 
-employeesName.forEach((name) => console.log(`${name} received a reward`));
+// employeesName.forEach((name) => console.log(`${name} received a reward`));
 
+
+// ************************* Array Find  *************************//
+
+// The find method for arrays return the
+// first value that satisfies the condition
+
+// const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+// const value = numbers.find((number) => number > 5);
+
+// console.log(value);
+
+// const states = ['California', 'Alaska', 'Colorado' , 'Hawaii'];
+
+// const state = states.find((state) => state.startsWith('A'));
+
+// console.log(state);
+
+
+
+// ************************* Array includes  *************************//
+
+// const array = [1, 2, 3, 4, 5, 6, 7];
+// console.log(array.includes(4));
+// console.log(array.includes(99));
+
+
+// const array2 = ['cat', 'dog', 'bird', 'horse'];
+// console.log(array2.includes('cat'));
+
+
+
+// ************************* Array sort  *************************//
+
+// Array sort ==> Alphabetically
+
+
+// const names = ['Anne', 'carl','Bob','Dean'];
+// names.sort();
+// console.log(names);
+
+// const numbers = [6, 3 , 1 , 7 ,9 ,2 , 15 ,25, 99 ,44];
+// numbers.sort();
+// console.log(numbers);
+
+// sort numbers ==> ascending order
+
+// const numbers = [6, 3, 1, 7, 9, 2, 15, 25, 99, 44];
+// numbers.sort((a, b) => a - b); // ascending order
+// console.log(numbers);
+
+// const numbers2 = [6, 3, 1, 7, 9, 2, 15, 25, 99, 44];
+// numbers2.sort((a, b) => b - a); // descending order
+// console.log(numbers2);
+
+
+
+// ************************* Array some & every  *************************//
+
+// const array = [1, 2, 3, 4, 5, 6];
+
+// array some
+
+// const value = array.some((number) => number > 5);
+// console.log(value);
+
+// array every
+
+// const value2 = array.every((number) => number > 5);
+// console.log(value2);
+
+
+
+// ************************* Array reduce  *************************//
