@@ -221,3 +221,32 @@ const names2 = ['Jon', 'Jenny', 'Johnny'];
 
 
 // ************************* Array reduce  *************************//
+
+const groceryList = [29, 12, 45, 35, 87, 110];
+
+// let sum = 0;
+// groceryList.forEach((grocery) => {
+//     sum += grocery;
+// })
+
+// console.log(sum);
+
+// const total = groceryList.reduce((accumulator, currentValue) => {
+//     return accumulator + currentValue;
+// }, 0);
+
+// console.log(total); 
+
+const numbers = [1,2,3,4,5];
+
+const sum = numbers.reduce((acc, val) => acc + val,0);
+console.log(sum);
+
+// acc = 0, val = 1 => 0 + 1 === 1; <== acc
+// acc = 1, val = 2 => 1 + 2 === 3; <== acc
+// acc = 3, val = 3 => 3 + 3 === 6; <== acc
+// acc = 6, val = 4 => 6 + 4 === 10; <== acc
+// acc = 10, val = 5 => 10 + 5 === 15
+
+
+
